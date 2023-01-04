@@ -17,14 +17,22 @@ public class Ejemplo01 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        
-        String miCiudad = obtenerCiudadMayuscula("Loja");
+        String cadena01 = "Loja";
+        //String miCiudad = obtenerCiudadMayuscula("Loja"); // correspondencia
+        String miCiudad = obtenerCiudadMayuscula(cadena01);
         System.out.printf("%s\n", miCiudad);
+        
+        // opcion 1
+        String miNombre = obtenerNombre();
+        System.out.printf("%s\n", miNombre);
+        
+        //opcion 2
+        System.out.printf("%s\n", obtenerNombre());
     }
     
     
-    public String obtenerCiudadMayuscula(String m){
-        String m2 = m.toUpperCase();
+    public static String obtenerCiudadMayuscula(String m){
+        String m2 = m.toUpperCase();// hace que se convierta todo en mayusculas
         return m2;
     }
     

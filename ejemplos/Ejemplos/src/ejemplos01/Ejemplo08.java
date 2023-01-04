@@ -5,6 +5,8 @@
  */
 package ejemplos01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -15,6 +17,12 @@ public class Ejemplo08 {
         // 
         String mensajeSuma;
         String mensajeSumaDos;
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese el valor de a");
+        int a = entrada.nextInt();
+        
+        if (a == 1){
         mensajeSuma = obtenerTablaSumar(10, 9); // se invoca al método 
                                                        // obtenerTablaSumar
                                                        // y el valor que 
